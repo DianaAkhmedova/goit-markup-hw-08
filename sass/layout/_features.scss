@@ -1,0 +1,24 @@
+.features-list {
+  display: flex;
+}
+
+.features-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+}
+
+.features-list__description {
+  line-height: 1.71;
+}
