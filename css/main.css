@@ -452,7 +452,32 @@ input {
   background-color: var(--background-button-color);
 }
 
+.header {
+  background-color: var(--main-light-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  color: var(--secondary-color);
+}
+
+.logo__text--inverse {
+  color: var(--main-light-color);
+}
+
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
   .nav-list {
     display: none;
   }
@@ -469,43 +494,20 @@ input {
     fill: var(--secondary-color);
   }
 }
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: var(--main-light-color);
-  border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo__text {
-  color: var(--secondary-color);
-}
-
-.logo__text--inverse {
-  color: var(--main-light-color);
-}
-
-.nav-list {
-  display: flex;
-}
-
-.page-nav {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
   }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
   .header__logo {
     margin-right: 88px;
+  }
+  .nav-list {
+    display: flex;
   }
   .nav-list__item:not(:last-child) {
     margin-right: 50px;
@@ -537,15 +539,24 @@ input {
     background-color: currentColor;
     border-radius: 2px;
   }
+  .contact-list {
+    margin-left: auto;
+  }
   .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
   }
   .contact-list__link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-list__link:hover, .contact-list__link:focus {
+    color: var(--accent-color);
   }
   .contact-list__icon {
     margin-right: 8px;
@@ -558,11 +569,7 @@ input {
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .header__container {
-    display: flex;
-    align-items: center;
+    padding-bottom: 25px;
   }
   .header__logo {
     margin-right: 93px;
@@ -572,24 +579,16 @@ input {
   }
   .contact-list {
     display: flex;
-    margin-left: auto;
   }
   .contact-list__item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
   }
   .contact-list__link {
-    display: flex;
-    align-items: center;
     line-height: 1.14;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contact-list__link:hover, .contact-list__link:focus {
-    color: var(--accent-color);
   }
   .contact-list__icon {
     margin-right: 10px;
-    fill: currentColor;
   }
 }
 .hero {
