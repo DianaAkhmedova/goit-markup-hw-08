@@ -901,6 +901,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin: auto;
 }
 
 .client-list__link {
