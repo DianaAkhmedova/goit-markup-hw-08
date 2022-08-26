@@ -242,14 +242,25 @@ input {
   }
 }
 .title {
-  margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   color: var(--secondary-color);
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 .subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -760,6 +771,9 @@ input {
   .features-list__subtitle {
     text-align: center;
   }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .features-list__item:nth-child(-n+2) {
@@ -821,23 +835,14 @@ input {
   background-color: var(--secondary-background-color);
 }
 
-.team-members-list {
-  display: flex;
-}
-
 .team-members-list__item {
-  flex-basis: calc((100% - 90px) / 4);
   background-color: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-members-list__item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .team-members-list__card-content-wrapper {
   padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -856,6 +861,42 @@ input {
   color: var(--main-color);
 }
 
+@media screen and (max-width: 767px) {
+  .team-members-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-members-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .team-members-list__item:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .team-members-list__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .team-members-list__card-content-wrapper {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-members-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .team-members-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-members-list__card-content-wrapper {
+    padding-bottom: 30px;
+  }
+}
 .client-list {
   display: flex;
   justify-content: space-between;

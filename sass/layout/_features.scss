@@ -16,6 +16,10 @@
   .features-list__subtitle {
     text-align: center;
   }
+
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
