@@ -12,10 +12,6 @@
   color: var(--secondary-color);
 }
 
-.logo__text--inverse {
-  color: var(--main-light-color);
-}
-
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 10px;
