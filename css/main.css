@@ -41,11 +41,12 @@ html {
 
 body {
   font-family: var(--main-font-family), var(--secondary-font-family);
-  font-size: 14px;
-  font-weight: 400;
   font-style: normal;
-  color: var(--main-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 h1,
@@ -386,6 +387,18 @@ input {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -395,7 +408,7 @@ input {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -403,10 +416,6 @@ input {
 
 .modal-form-field {
   margin-bottom: 10px;
-}
-
-.modal-form-field-message {
-  margin-bottom: 20px;
 }
 
 .modal-form-input-description {
@@ -448,6 +457,10 @@ input {
   fill: var(--accent-color);
 }
 
+.modal-form-field-message {
+  margin-bottom: 20px;
+}
+
 .modal-form-message {
   resize: none;
   width: 100%;
@@ -458,8 +471,8 @@ input {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -530,6 +543,21 @@ input {
   background-color: var(--background-button-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form-checkbox-description {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-description {
+    line-height: 1.15;
+  }
+  .modal-form-message::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 .header {
   background-color: var(--main-light-color);
   border-bottom: 1px solid #ececec;

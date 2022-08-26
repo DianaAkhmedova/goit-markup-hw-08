@@ -10,11 +10,12 @@ html {
 
 body {
   font-family: var(--main-font-family), var(--secondary-font-family);
-  font-size: 14px;
-  font-weight: 400;
   font-style: normal;
-  color: var(--main-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 h1,

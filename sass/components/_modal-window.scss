@@ -40,3 +40,17 @@
 .close-button:focus .close-button-icon {
   fill: var(--accent-color);
 }
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
