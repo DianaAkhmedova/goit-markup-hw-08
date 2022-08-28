@@ -22,33 +22,20 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .features-list__item:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   .features-list__item {
     flex-basis: calc((100% - 30px) / 2);
-
-    &:not(:nth-child(even)) {
-      margin-right: 30px;
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features-list__item {
     flex-basis: calc((100% - 90px) / 4);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }

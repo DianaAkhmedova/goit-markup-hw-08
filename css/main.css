@@ -144,6 +144,10 @@ input {
   }
   .mobile-menu__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -163,9 +167,6 @@ input {
   }
   .mobile-menu__close-button:hover .mobile-menu__close-icon, .mobile-menu__close-button:focus .mobile-menu__close-icon {
     fill: var(--accent-color);
-  }
-  .mobile-menu__nav-list {
-    margin-bottom: 306px;
   }
   .mobile-menu__nav-item:not(:last-child) {
     margin-bottom: 32px;
@@ -799,29 +800,19 @@ input {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .features-list__item:nth-child(-n+2) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   .features-list__item {
     flex-basis: calc((100% - 30px) / 2);
-  }
-  .features-list__item:not(:nth-child(even)) {
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list__item {
     flex-basis: calc((100% - 90px) / 4);
-  }
-  .features-list__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -894,18 +885,13 @@ input {
   .team-members-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   .team-members-list__item {
     flex-basis: calc((100% - 30px) / 2);
   }
-  .team-members-list__item:not(:nth-child(even)) {
-    margin-right: 30px;
-  }
 }
 @media screen and (max-width: 1199px) {
-  .team-members-list__item:nth-child(-n+2) {
-    margin-bottom: 30px;
-  }
   .team-members-list__card-content-wrapper {
     padding-bottom: 24px;
   }
@@ -913,9 +899,6 @@ input {
 @media screen and (min-width: 1200px) {
   .team-members-list__item {
     flex-basis: calc((100% - 90px) / 4);
-  }
-  .team-members-list__item:not(:last-child) {
-    margin-right: 30px;
   }
   .team-members-list__card-content-wrapper {
     padding-bottom: 30px;
@@ -1040,14 +1023,8 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  .footer__address-wrapper {
-    margin-bottom: 60px;
-  }
   .address-list__item:not(:last-child) {
     margin-bottom: 8px;
-  }
-  .footer-social-link-wrapper {
-    margin-bottom: 60px;
   }
   .footer-form__button {
     width: 200px;

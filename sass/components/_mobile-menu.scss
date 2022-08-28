@@ -23,6 +23,10 @@
 
   .mobile-menu__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -46,10 +50,6 @@
     .mobile-menu__close-button:focus & {
       fill: var(--accent-color);
     }
-  }
-
-  .mobile-menu__nav-list {
-    margin-bottom: 306px;
   }
 
   .mobile-menu__nav-item:not(:last-child) {

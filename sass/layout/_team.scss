@@ -39,21 +39,15 @@
   .team-members-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   .team-members-list__item {
     flex-basis: calc((100% - 30px) / 2);
-
-    &:not(:nth-child(even)) {
-      margin-right: 30px;
-    }
   }
 }
-@media screen and (max-width: 1199px) {
-  .team-members-list__item:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
 
+@media screen and (max-width: 1199px) {
   .team-members-list__card-content-wrapper {
     padding-bottom: 24px;
   }
@@ -62,10 +56,6 @@
 @media screen and (min-width: 1200px) {
   .team-members-list__item {
     flex-basis: calc((100% - 90px) / 4);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 
   .team-members-list__card-content-wrapper {
