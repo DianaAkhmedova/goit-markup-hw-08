@@ -32,18 +32,30 @@
 }
 
 @media screen and (max-width: 767px) {
+  .client-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
   .client-list__link {
-    width: 210px;
+    max-width: 210px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .client-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
   .client-list__link {
     width: 226px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .client-list__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+
   .client-list__link {
     width: 170px;
   }
