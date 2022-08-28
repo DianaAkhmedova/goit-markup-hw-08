@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 767px) {
   .footer__address-wrapper {
-    // margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   .address-list__item:not(:last-child) {
@@ -87,11 +87,7 @@
   }
 
   .footer-social-link-wrapper {
-    // margin-bottom: 60px;
-  }
-
-  .footer-form__button {
-    width: 200px;
+    margin-bottom: 60px;
   }
 }
 

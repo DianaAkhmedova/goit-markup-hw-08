@@ -1023,11 +1023,14 @@ input {
 }
 
 @media screen and (max-width: 767px) {
+  .footer__address-wrapper {
+    margin-bottom: 60px;
+  }
   .address-list__item:not(:last-child) {
     margin-bottom: 8px;
   }
-  .footer-form__button {
-    width: 200px;
+  .footer-social-link-wrapper {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
