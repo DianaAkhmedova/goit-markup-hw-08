@@ -28,6 +28,7 @@
     justify-content: space-between;
     height: 100%;
     padding-left: 25px;
+    padding-right: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -114,6 +115,22 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .mobile-menu__social-link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .mobile-menu__tel {
+    font-size: 30px;
+  }
+
+  .mobile-menu__social-link {
+    font-size: 12px;
   }
 }
 
