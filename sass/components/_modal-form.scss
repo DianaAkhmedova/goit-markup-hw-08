@@ -152,16 +152,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
 @media screen and (max-width: 1199px) {
   .modal-form-checkbox-description {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form-checkbox-description {
+    font-size: 9px;
   }
 }
 
